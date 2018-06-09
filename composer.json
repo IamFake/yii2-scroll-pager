@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "kop\\y2sp\\": ""
+            "badaboom\\y2sp\\": ""
         }
     }
 }

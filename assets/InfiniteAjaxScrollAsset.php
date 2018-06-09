@@ -1,6 +1,6 @@
 <?php
 
-namespace kop\y2sp\assets;
+namespace badaboom\y2sp\assets;
 
 use yii\web\AssetBundle;
 

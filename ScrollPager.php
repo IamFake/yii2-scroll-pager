@@ -1,8 +1,8 @@
 <?php
 
-namespace kop\y2sp;
+namespace badaboom\y2sp;
 
-use kop\y2sp\assets\InfiniteAjaxScrollAsset;
+use badaboom\y2sp\assets\InfiniteAjaxScrollAsset;
 use Yii;
 use yii\base\InvalidConfigException;
 use yii\base\Widget;
@@ -25,7 +25,7 @@ use yii\widgets\LinkPager;
  *      'dataProvider' => $dataProvider,
  *      'itemOptions' => ['class' => 'item'],
  *      'itemView' => '_item_view',
- *      'pager' => ['class' => \kop\y2sp\ScrollPager::className()]
+ *      'pager' => ['class' => \badaboom\y2sp\ScrollPager::className()]
  * ]);
  * </code>
  *
@@ -246,11 +246,11 @@ class ScrollPager extends Widget
 
         // Register translations source
         Yii::$app->i18n->translations = ArrayHelper::merge(Yii::$app->i18n->translations, [
-            'kop\y2sp' => [
+            'badaboom\y2sp' => [
                 'class' => PhpMessageSource::className(),
                 'basePath' => '@vendor/kop/yii2-scroll-pager/messages',
                 'fileMap' => [
-                    'kop\y2sp' => 'general.php'
+                    'badaboom\y2sp' => 'general.php'
                 ]
             ]
         ]);
@@ -260,12 +260,12 @@ class ScrollPager extends Widget
 
         // Set default trigger text if not set
         if ($this->triggerText === null) {
-            $this->triggerText = Yii::t('kop\y2sp', 'Load more items');
+            $this->triggerText = Yii::t('badaboom\y2sp', 'Load more items');
         }
 
         // Set default "none left" message text if not set
         if ($this->noneLeftText === null) {
-            $this->noneLeftText = Yii::t('kop\y2sp', 'You reached the end');
+            $this->noneLeftText = Yii::t('badaboom\y2sp', 'You reached the end');
         }
     }
 

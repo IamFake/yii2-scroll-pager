@@ -51,7 +51,7 @@ echo ListView::widget([
      'dataProvider' => $dataProvider,
      'itemOptions' => ['class' => 'item'],
      'itemView' => '_item_view',
-     'pager' => ['class' => \kop\y2sp\ScrollPager::className()]
+     'pager' => ['class' => \badaboom\y2sp\ScrollPager::className()]
 ]);
 ```
 
@@ -61,7 +61,7 @@ echo ListView::widget([
 echo GridView::widget([
      'dataProvider' => $dataProvider,
      'pager' => [
-        'class' => \kop\y2sp\ScrollPager::className(),
+        'class' => \badaboom\y2sp\ScrollPager::className(),
         'container' => '.grid-view tbody',
         'item' => 'tr',
         'paginationSelector' => '.grid-view .pagination',
