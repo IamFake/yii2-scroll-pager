@@ -159,6 +159,11 @@ class ScrollPager extends Widget
     public $overflowContainer;
 
     /**
+     * @var string $scrollContainerOverwrite A selector to overwrite scrollContainer in jquery-ias
+     */
+    public $scrollContainerOverwrite;
+
+    /**
      * @var string|JsExpression $eventOnScroll Triggered when the visitors scrolls.
      * @see http://infiniteajaxscroll.com/docs/events.html
      */
@@ -281,7 +286,8 @@ class ScrollPager extends Widget
             'pagination' => $this->paginationSelector,
             'next' => $this->next,
             'delay' => $this->delay,
-            'negativeMargin' => $this->negativeMargin
+            'negativeMargin' => $this->negativeMargin,
+	        'scrollContainerOverwrite' => $this->scrollContainerOverwrite ?? null
         ]);
         $initString = empty($this->overflowContainer)
             ? "var {$this->id}_ias = jQuery.ias({$pluginSettings});"

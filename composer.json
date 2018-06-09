@@ -17,9 +17,9 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=7.0.0",
         "yiisoft/yii2": "*",
-        "badaboom/jquery-ias": "^2.2.1"
+        "badaboom/jquery-ias": "*"
     },
     "autoload": {
         "psr-4": {
