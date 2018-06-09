@@ -28,7 +28,7 @@ class InfiniteAjaxScrollAsset extends AssetBundle
      */
     public function init()
     {
-        $this->sourcePath = '@vendor/webcreate/jquery-ias/src';
+        $this->sourcePath = '@vendor/badaboom/jquery-ias/src';
         $this->js = [
             'callbacks.js',
             'jquery-ias.js',
