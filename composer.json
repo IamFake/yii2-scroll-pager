@@ -19,7 +19,7 @@
     "require": {
         "php": ">=7.0.0",
         "yiisoft/yii2": "*",
-        "badaboom/jquery-ias": "*"
+        "badaboom/jquery-ias": "^2.3.2"
     },
     "autoload": {
         "psr-4": {
